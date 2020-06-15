@@ -38,7 +38,7 @@ gg.setVisible(false)
 PUBGMH = 1
 function HOME()
 MN = gg.choice({ 
-"{1📌}️ Antiban [ Lobby ])",
+"{1📌}️ Antiban [ Lobby1])",
 "{2📌}️ (Wallhack All SD)🔓🔓🔓[Lobby])",
 "{3📌} (Wallhack Another Chipset[Lobby])",
 "{4📌} (Colour 🍎🍋🍏🥛[Lobby])",
