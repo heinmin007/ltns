@@ -5,7 +5,7 @@ gg.alert("[⚠️] • The script has expired • [⚠️]")
 os.exit()
 end
 if io.open("/storage/emulated/0/Android/data/hmhltns") then
- if io.open("/storage/emulated/0/Download/LtnsOnlineScript{S13🇲🇲}.lua") or io.open("/storage/emulated/0/UCDownloads/LtnsOnlineScript{S13🇲🇲}.lua") then
+ if io.open("/storage/emulated/0/Download/LtnsOnlineScript{S13🇲🇲}AD10.lua") or io.open("/storage/emulated/0/UCDownloads/LtnsOnlineScript{S13🇲🇲}AD10.lua") then
 else gg.alert("Don't Move And Rename to My script ") os.exit() end
 if gg.PACKAGE == 'com.ltns.com' then else gg.alert("This Script can run with only LTNS GG") os.exit() end
 gg.alert(os.date("🇲🇲🇲🇲🇲🇲🇲🇲 LTNS KILLER MYANMAR SCRIPT Online Script V31 🇲🇲🇲🇲🇲🇲🇲🇲🇲🇲"))
