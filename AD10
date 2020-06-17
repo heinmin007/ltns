@@ -79,26 +79,104 @@ end
   PUBGMH = -1
 end
 function me1()
+
+
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("67109633", gg.TYPE_DWORD)
-gg.getResults(50000)
-gg.editAll("0", gg.TYPE_DWORD)
+gg.setVisible(false)
+gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.setVisible(false)
+gg.getResultsCount()
+gg.setVisible(false)
+gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.setVisible(false)
+gg.getResults(30101996)
+gg.addListItems({
+  [1] = {
+    address = 2970277376,
+    flags = 4,
+    freeze = true,
+    value = 0
+  },
+  [2] = {
+    address = 2970486976,
+    flags = 4,
+    freeze = true,
+    value = 0
+  },
+  [3] = {
+    address = 2970991948,
+    flags = 4,
+    freeze = true,
+    value = 0
+  },
+  [4] = {
+    address = 3041580544,
+    flags = 4,
+    freeze = true,
+    value = 0
+  },
+  [5] = {
+    address = 3041790144,
+    flags = 4,
+    freeze = true,
+    value = 0
+  },
+  [6] = {
+    address = 3042295116,
+    flags = 4,
+    freeze = true,
+    value = 0
+  }
+})
+gg.editAll("0", 4)
 gg.clearResults()
-gg.alert("LTNS TEAM")
 gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("-309056968;-298841599;-309061065", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-298841599", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("10", gg.TYPE_DWORD)
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache")
+os.remove("/storage/emulated/0/tencent")
+os.remove("/storage/emulated/0/MidasOverse")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/tbslog")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/cache")
+os.remove("/storage/emulated/0/tencent")
+os.remove("/storage/emulated/0/MidasOverse")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/vmpcloudconfig.json")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/cache")
+os.remove("/storage/emulated/0/tencent")
+os.remove("/storage/emulated/0/MidasOverse")
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/tbslog")
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/login-identifier.txt")
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt")
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/vmpcloudconfig.json")
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini")
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
 gg.clearResults()
-gg.alert("Play Safe Pro")
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("2015175168", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("0", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("\"67109377\"", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("\"67109377\"", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, i in ipairs((gg.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil))) do
+  if i.flags == gg.TYPE_DWORD then
+    i.value = "\"0\""
+    i.freeze = true
+  end
+end
+gg.addListItems((gg.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)))
 gg.clearResults()
 gg.alert("🔒 Bypass Has Been Activated 🔒")
 end
