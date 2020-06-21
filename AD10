@@ -63,7 +63,7 @@ end
 
 function Bypass()
   SN = gg.multiChoice({
-"BYPASS {KR} Lobby",
+"BYPASS {GL & KR} Lobby",
 "𝙴𝚇𝙸𝚃"},
 nil,"🇲🇲LTNS Online Script V31🇲🇲")
   if SN == nil then
