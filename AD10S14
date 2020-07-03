@@ -6,7 +6,7 @@ ltns.alert("[⚠️] • The script has expired • [⚠️]")
 os.exit()
 end
 if io.open("/storage/emulated/0/Android/data/hmhltns") then
- if io.open("/storage/emulated/0/Download/LtnsOnlineScript{S13🇲🇲}.lua") or io.open("/storage/emulated/0/UCDownloads/LtnsOnlineScript{S13🇲🇲}.lua") then
+ if io.open("/storage/emulated/0/Download/LtnsOnlineScript{S14🇲🇲}AD10.lua") or io.open("/storage/emulated/0/UCDownloads/LtnsOnlineScript{S14🇲🇲}AD10.lua") then
 else ltns.alert("Don't Move And Rename to My script ") os.exit() end
 if ltns.PACKAGE == 'com.ltns.com' then else ltns.alert("This Script can run with only LTNS ltns") os.exit() end
 ltns.alert(os.date("🇲🇲🇲🇲🇲🇲🇲🇲 LTNS KILLER MYANMAR SCRIPT Online Script Ever 🇲🇲🇲🇲🇲🇲🇲🇲🇲🇲"))
