@@ -2524,21 +2524,6 @@ end
 end
 PUBGMH = -1
 end
-function 845-865()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_VIDEO)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("200", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(25)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("930", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(25)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast(" [SnapDragon 845-865] Activated")
-end
 
 function wc1()
 
@@ -3501,7 +3486,7 @@ WH855()
 Y855()
 end
 if MN1[38] == true then
-845-865()
+WH855()
 end
 if MN1[39] == true then
 HOME()
