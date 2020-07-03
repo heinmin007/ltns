@@ -2524,6 +2524,21 @@ end
 end
 PUBGMH = -1
 end
+function 845-865()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("200", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(25)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("930", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(25)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast(" [SnapDragon 845-865] Activated")
+end
 
 function wc1()
 
@@ -3370,7 +3385,7 @@ end
 
 function WH()
 
-MN1 = gg.multiChoice({"{📌1}🔭🔭WH SD 400","{📌2}🔭🔭WH SD 410","{📌3}🔭🔭WH SD 415","{📌4}🔭🔭WH SD 425","{📌5}🔭🔭WH SD 430","{📌6}🔭🔭WH SD 435","{📌7}🔭🔭WH SD 439","{📌8}🔭🔭WH SD 450","{📌9}🔭🔭WH SD 600","{📌10}🔭🔭WH SD 610","{📌11}🔭🔭WH SD 615","{📌12}🔭🔭WH SD 616","{📌13}🔭🔭WH SD 625","{📌14}🔭🔭WH SD 626","{📌15}🔭🔭WH SD 630","{📌16}🔭🔭WH SD 632","{📌17}🔭🔭WH SD 636","{📌18}🔭🔭WH SD 650","{📌19}🔭🔭WH SD 652","{📌20}🔭🔭WH SD 653","{📌21}🔭🔭WH SD 660","{📌22}🔭🔭WH SD 665","{📌23}🔭🔭WH SD 670","{📌24}🔭🔭WH SD 675","{📌25}🔭🔭WH SD 710","{📌26}🔭🔭WH SD 712","{📌27}🔭🔭WH SD 800","{📌28}🔭🔭WH SD 801","{📌29}🔭🔭WH SD 805","{📌30}🔭🔭WH SD 808","{📌31}🔭🔭WH SD 810","{📌32}🔭🔭WH SD 815","{📌33}🔭🔭WH SD 820","{📌34}🔭🔭WH SD 821","{📌35}🔭🔭WH SD 835","{📌36}🔭🔭WH SD 845","{📌37}🔭🔭WH SD 855","[Back]"}, nil, "🇲🇲🇲🇲LTNS Online Script V31 VIP🇲🇲🇲🇲")
+MN1 = gg.multiChoice({"{📌1}🔭🔭WH SD 400","{📌2}🔭🔭WH SD 410","{📌3}🔭🔭WH SD 415","{📌4}🔭🔭WH SD 425","{📌5}🔭🔭WH SD 430","{📌6}🔭🔭WH SD 435","{📌7}🔭🔭WH SD 439","{📌8}🔭🔭WH SD 450","{📌9}🔭🔭WH SD 600","{📌10}🔭🔭WH SD 610","{📌11}🔭🔭WH SD 615","{📌12}🔭🔭WH SD 616","{📌13}🔭🔭WH SD 625","{📌14}🔭🔭WH SD 626","{📌15}🔭🔭WH SD 630","{📌16}🔭🔭WH SD 632","{📌17}🔭🔭WH SD 636","{📌18}🔭🔭WH SD 650","{📌19}🔭🔭WH SD 652","{📌20}🔭🔭WH SD 653","{📌21}🔭🔭WH SD 660","{📌22}🔭🔭WH SD 665","{📌23}🔭🔭WH SD 670","{📌24}🔭🔭WH SD 675","{📌25}🔭🔭WH SD 710","{📌26}🔭🔭WH SD 712","{📌27}🔭🔭WH SD 800","{📌28}🔭🔭WH SD 801","{📌29}🔭🔭WH SD 805","{📌30}🔭🔭WH SD 808","{📌31}🔭🔭WH SD 810","{📌32}🔭🔭WH SD 815","{📌33}🔭🔭WH SD 820","{📌34}🔭🔭WH SD 821","{📌35}🔭🔭WH SD 835","{📌36}🔭🔭WH SD 845","{📌37}🔭🔭WH SD 855","{📌38}🔭🔭WH SD 865","[Back]"}, nil, "🇲🇲🇲🇲LTNS Online Script V31 VIP🇲🇲🇲🇲")
 if MN1 == nil then
 else
 if MN1[1] == true then
@@ -3486,6 +3501,9 @@ WH855()
 Y855()
 end
 if MN1[38] == true then
+845-865()
+end
+if MN1[39] == true then
 HOME()
 end
 end
