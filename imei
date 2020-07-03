@@ -3511,7 +3511,7 @@ WH855()
 Y855()
 end
 if MN1[38] == true then
-845-865()
+WH865()
 end
 if MN1[39] == true then
 HOME()
@@ -3519,7 +3519,7 @@ end
 end
 PUBGMH = -1
 end
-function 845-865()
+function WH865()
   gg.clearResults()
   gg.setRanges(gg.REGION_VIDEO)
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
