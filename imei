@@ -3521,7 +3521,7 @@ PUBGMH = -1
 end
 function WH865()
   gg.clearResults()
-  gg.setRanges(gg.REGION_VIDEO)
+  gg.setRanges(131072)
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineAddress("200", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(25)
