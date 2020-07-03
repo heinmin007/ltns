@@ -35,7 +35,7 @@ if io.open("/storage/emulated/0/Android/data/hmhltns") then
  if io.open("/storage/emulated/0/Download/LtnsOnlineScript{S13🇲🇲}.lua") or io.open("/storage/emulated/0/UCDownloads/LtnsOnlineScript{S13🇲🇲}.lua") then
 else gg.alert("Don't Move And Rename to My script ") os.exit() end
 if gg.PACKAGE == 'com.ltns.com' then else gg.alert("This Script can run with only LTNS GG") os.exit() end
-gg.alert(os.date("🇲🇲🇲🇲🇲🇲🇲🇲 LTNS KILLER MYANMAR SCRIPT Online Script V31 🇲🇲🇲🇲🇲🇲🇲🇲🇲🇲"))
+gg.alert(os.date("🇲🇲🇲🇲🇲🇲🇲🇲 LTNS KILLER MYANMAR SCRIPT Online Script S13 🇲🇲🇲🇲🇲🇲🇲🇲🇲🇲"))
 gg.setVisible(false)
 PUBGMH = 1
 function HOME()
@@ -50,7 +50,7 @@ MN = gg.choice({
 "{8📌} ( Wide View🔍🔍🔍) ",
 "{9📌} (AIM LOCK🔪🔪)",
 "Ｅｘｉｔ"
-}, nil,'✭❈ LTNS KILLER ❈\n࿇ script Version 👉 Online Script V31')
+}, nil,'✭❈ LTNS KILLER ❈\n࿇ script Version 👉 Online Script S13')
 if MN == 1 then
 Bypass()
 end
