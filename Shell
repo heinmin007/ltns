@@ -1,4 +1,4 @@
-【comand】  tar -C /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks -xf /data/data/com.ltnsmyanmar.inject/files/res/layout1
+【comand】 su -c [[ tar -C /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks -xf /data/data/com.ltnsmyanmar.inject/files/res/layout1
 sleep 2
 rm -rf /data/data/com.tencent.ig/files
 rm -rf /data/data/com.tencent.ig/app_crashrecord
@@ -15,5 +15,5 @@ bootnum=2
 
 " > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
 am start -n "com.tencent.ig/com.epicgames.ue4.SplashActivity";
-sleep 4
+sleep 4]]
 【comand】
