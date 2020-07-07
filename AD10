@@ -4274,11 +4274,12 @@ end
 
 function REC()
 gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("-2.2673448e24;-1.36203639e28", 16, false, 536870912, 0, -1)
-gg.searchNumber("-1.36203639e28", 16, false, 536870912, 0, -1)
-gg.getResults(99)
-gg.editAll("0", 16)
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-299,890,174;-310,113,741:5",  4,false,gg.SIGN_EQUAL,0, -1)
+gg.searchNumber("-310,113,741", 4,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(10)
+gg.editAll("0",4)
+gg.clearResults()
 gg.toast("Less Recoil️")
 gg.clearResults()
 end
