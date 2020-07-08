@@ -111,7 +111,7 @@ for i, v in ipairs(t) do
 end
 gg.addListItems(t)
 t = nil
-gg.alert("Successful😄")
+gg.alert("Successful1😄")
 end
 function MEKR()
 gg.clearResults()
@@ -153,7 +153,7 @@ for i, v in ipairs(t) do
 end
 gg.addListItems(t)
 t = nil
-gg.alert("Successful😄")
+gg.alert("Successful1😄")
 end
 function CLR()
 CHACKKK1 = gg.choice({"🇲🇲New Color All Device🇲🇲","🇲🇲 New Color Exynos🇲🇲","🇲🇲 Color HDR🇲🇲","🇲🇲Color Kirin🇲🇲","🇲🇲Color Mediatek🇲🇲","🇲🇲Color Vehicle🇲🇲","🇲🇲Color 400🇲🇲","🇲🇲Color 410🇲🇲","🇲🇲Color 415🇲🇲","🇲🇲Color 425🇲🇲","🇲🇲Color 430🇲🇲","🇲🇲 Color 435🇲🇲","🇲🇲Color 450🇲🇲","🇲🇲Color 610🇲🇲","🇲🇲Color 615🇲🇲","🇲🇲Color 625🇲🇲","🇲🇲Color 636🇲🇲","🇲🇲Color 650🇲🇲","🇲🇲Color 653🇲🇲","🇲🇲Color 660🇲🇲"," 🇲🇲Color 665🇲🇲","🇲🇲Color 675🇲🇲","🇲🇲Color 710🇲🇲","🇲🇲Color 712🇲🇲","🇲🇲Color 835🇲🇲","🇲🇲 Color 845🇲🇲","🇲🇲Color 855🇲🇲","BACK"}, nil, "🇲🇲🇲🇲gg V18🇲🇲🇲🇲")
