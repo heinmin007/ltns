@@ -1,229 +1,116 @@
-
-endtime=load("return os.time{year=2020, month=7, day=24, hour=7,min=30, sec=20}")()
+endtime=load("return os.time{year=2020, month=7, day=14, hour=7,min=30, sec=20}")()
 if(os.time()>endtime) then
 gg.alert("[⚠️] • The script has expired • [⚠️]")
 os.exit()
 end
-if io.open("/storage/emulated/0/Android/data/hmhltns") then
- if io.open("/storage/emulated/0/Download/LtnsOnlineScript{S13🇲🇲}AD10.lua") or io.open("/storage/emulated/0/UCDownloads/LtnsOnlineScript{S13🇲🇲}AD10.lua") then
-else gg.alert("Don't Move And Rename to My script ") os.exit() end
-if gg.PACKAGE == 'com.ltns.com' then else gg.alert("This Script can run with only LTNS GG") os.exit() end
-gg.alert(os.date("🇲🇲🇲🇲🇲🇲🇲🇲 LTNS KILLER MYANMAR SCRIPT Online Script S13 🇲🇲🇲🇲🇲🇲🇲🇲🇲🇲"))
+gg.alert(os.date("🇲🇲🇲🇲🇲🇲🇲🇲  KILLER MYANMAR SCRIPT NATSOE VESION 🇲🇲🇲🇲🇲🇲🇲🇲🇲🇲"))
 gg.setVisible(false)
 PUBGMH = 1
 function HOME()
 MN = gg.choice({ 
-"{1📌}️ Antiban [ Lobby ])",
-"{2📌}️ (Wallhack All SD)🔓🔓🔓[Lobby])",
-"{3📌} (Wallhack Another Chipset[Lobby])",
-"{4📌} (Colour 🍎🍋🍏🥛[Lobby])",
-"{5📌} (Less Recoil [Lobby])",
-"{6📌} (Auto Headshot👼👼👼[Before Plane & Game])",
-"{7📌} (Antenna hack📍📍📍)္",
-"{8📌} ( Wide View🔍🔍🔍) ",
-"{9📌} (AIM LOCK🔪🔪)",
+"{1📌}️ Data On/Off ",
+"{2📌}️ Antiban [ Lobby ])",
+"{3📌}️ (Wallhack All SD)🔓🔓🔓[Lobby])",
+"{4📌} (Wallhack Another Chipset[Lobby])",
+"{5📌} (Colour 🍎🍋🍏🥛[Lobby])",
+"{6📌} (Less Recoil [Lobby])",
+"{7📌} (Auto Headshot👼👼👼[Before Plane & Game])",
+"{8📌} (Antenna hack📍📍📍)္",
+"{9📌} ( Wide View🔍🔍🔍) ",
+"{10📌} (AIM LOCK🔪🔪)",
 "Ｅｘｉｔ"
-}, nil,'✭❈ LTNS KILLER ❈\n࿇ script Version 👉 Online Script S13')
+}, nil,'✭❈ gg KILLER ❈\n࿇ script Version 👉 NATSOE')
 if MN == 1 then
-Bypass()
+ONOFF()
 end
 if MN == 2 then
-WH()
+ME1()
 end
 if MN == 3 then
-CHIP()
+WH()
 end
 if MN == 4 then
-CLR()
+CHIP()
 end
 if MN == 5 then
-REC()
+CLR()
 end
 if MN == 6 then
-AUTOHS()
+REC()
 end
 if MN == 7 then
-AT()
+AUTOHS()
 end
 if MN == 8 then
-WV()
+AT()
 end
 if MN == 9 then
-AIM()
+WV()
 end
 if MN == 10 then
+AIM()
+end
+if MN == 11 then
 close()
 end 
 PUBGMH = -1
 end
-
-
-
------------------------------------------------------------------------------------------
-
-function Bypass()
-  SN = gg.multiChoice({
-"BYPASS {KR} Lobby",
-"𝙴𝚇𝙸𝚃"},
-nil,"🇲🇲LTNS Online Script S13🇲🇲")
-  if SN == nil then
-  else
-  if SN[1] == true then
-   a()
-  end
-  if SN[2] == true then
-    Exit()
-  end
-
+function ME1()
+ME1 = gg.choice({" 🇨🇰🇨🇰Antiban GL\n ","🇰🇷🇰🇷Antiban KR ","Back"}, nil," 🇲🇲🇲🇲 NATSOE 🇲🇲🇲🇲")
+if ME1 == nil then
+else
+if ME1 == 1 then
+ MEGL()
 end
-  PUBGMH = -1
+if ME1 ==2 then
+ MEKR()
 end
-function a()
+if ME1 == 3 then
+HOME()
+end
+end
+PUBGMH = -1
+end
+function MEGL()
+gg.clearResults()
+gg.clearList()
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("67109377;67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-revert = gg.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_DWORD then
-		v.value = "0"
-		v.freeze = true
-	end
+gg.searchNumber("67109000~67109999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("67109000~67109999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("67109000~67109999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+local NotXRapz = gg.getResults(140701)
+for i, v in ipairs(NotXRapz) do
+    NotXRapz[i].value = '0'
+    NotXRapz[i].freeze = true
 end
-gg.addListItems(t)
-t = nil
- gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("2136~2139", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-revert = gg.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_DWORD then
-		v.value = "0"
-		v.freeze = true
-	end
+gg.addListItems(NotXRapz)
+gg.toast('—⪻•『 Fᴜᴄᴋɪɴɢ Bʏᴘᴀss 0.19.0 』•⪼—')
+gg.clearResults()
+gg.clearList()
+gg.alert("Successful")
 end
-gg.addListItems(t)
-t = nil
- gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("65538", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-revert = gg.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_DWORD then
-		v.value = "0"
-		v.freeze = true
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.alert("🇲🇲Successful")
-end
-function me1()
-
-
+function MEKR()
+gg.clearResults()
+gg.clearList()
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.setVisible(false)
-gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.setVisible(false)
-gg.getResultsCount()
-gg.setVisible(false)
-gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.setVisible(false)
-gg.getResults(30101996)
-gg.addListItems({
-  [1] = {
-    address = 2970277376,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [2] = {
-    address = 2970486976,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [3] = {
-    address = 2970991948,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [4] = {
-    address = 3041580544,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [5] = {
-    address = 3041790144,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [6] = {
-    address = 3042295116,
-    flags = 4,
-    freeze = true,
-    value = 0
-  }
-})
-gg.editAll("0", 4)
-gg.clearResults()
-gg.clearResults()
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache")
-os.remove("/storage/emulated/0/tencent")
-os.remove("/storage/emulated/0/MidasOverse")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/tbslog")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/cache")
-os.remove("/storage/emulated/0/tencent")
-os.remove("/storage/emulated/0/MidasOverse")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/vmpcloudconfig.json")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/cache")
-os.remove("/storage/emulated/0/tencent")
-os.remove("/storage/emulated/0/MidasOverse")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/tbslog")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/login-identifier.txt")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/vmpcloudconfig.json")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("\"67109377\"", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("\"67109377\"", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-revert = gg.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, i in ipairs((gg.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil))) do
-  if i.flags == gg.TYPE_DWORD then
-    i.value = "\"0\""
-    i.freeze = true
-  end
+gg.searchNumber("67109000~67109999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("67109000~67109999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("67109000~67109999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+local NotXRapz = gg.getResults(140701)
+for i, v in ipairs(NotXRapz) do
+    NotXRapz[i].value = '0'
+    NotXRapz[i].freeze = true
 end
-gg.addListItems((gg.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)))
+gg.addListItems(NotXRapz)
+gg.toast('—⪻•『 Fᴜᴄᴋɪɴɢ Bʏᴘᴀss 0.19.0 』•⪼—')
 gg.clearResults()
-gg.alert("🔒 Bypass Has Been Activated 🔒")
+gg.clearList()
+gg.alert("Successful")
 end
 function CLR()
-CHACKKK1 = gg.choice({"🇲🇲New Color All Device🇲🇲","🇲🇲 New Color Exynos🇲🇲","🇲🇲 Color HDR🇲🇲","🇲🇲Color Kirin🇲🇲","🇲🇲Color Mediatek🇲🇲","🇲🇲Color Vehicle🇲🇲","🇲🇲Color 400🇲🇲","🇲🇲Color 410🇲🇲","🇲🇲Color 415🇲🇲","🇲🇲Color 425🇲🇲","🇲🇲Color 430🇲🇲","🇲🇲 Color 435🇲🇲","🇲🇲Color 450🇲🇲","🇲🇲Color 610🇲🇲","🇲🇲Color 615🇲🇲","🇲🇲Color 625🇲🇲","🇲🇲Color 636🇲🇲","🇲🇲Color 650🇲🇲","🇲🇲Color 653🇲🇲","🇲🇲Color 660🇲🇲"," 🇲🇲Color 665🇲🇲","🇲🇲Color 675🇲🇲","🇲🇲Color 710🇲🇲","🇲🇲Color 712🇲🇲","🇲🇲Color 835🇲🇲","🇲🇲 Color 845🇲🇲","🇲🇲Color 855🇲🇲","BACK"}, nil, "🇲🇲🇲🇲LTNS Online Script V31🇲🇲🇲🇲")
+CHACKKK1 = gg.choice({"🇲🇲New Color All Device🇲🇲","🇲🇲 New Color Exynos🇲🇲","🇲🇲 Color HDR🇲🇲","🇲🇲Color Kirin🇲🇲","🇲🇲Color Mediatek🇲🇲","🇲🇲Color Vehicle🇲🇲","🇲🇲Color 400🇲🇲","🇲🇲Color 410🇲🇲","🇲🇲Color 415🇲🇲","🇲🇲Color 425🇲🇲","🇲🇲Color 430🇲🇲","🇲🇲 Color 435🇲🇲","🇲🇲Color 450🇲🇲","🇲🇲Color 610🇲🇲","🇲🇲Color 615🇲🇲","🇲🇲Color 625🇲🇲","🇲🇲Color 636🇲🇲","🇲🇲Color 650🇲🇲","🇲🇲Color 653🇲🇲","🇲🇲Color 660🇲🇲"," 🇲🇲Color 665🇲🇲","🇲🇲Color 675🇲🇲","🇲🇲Color 710🇲🇲","🇲🇲Color 712🇲🇲","🇲🇲Color 835🇲🇲","🇲🇲 Color 845🇲🇲","🇲🇲Color 855🇲🇲","BACK"}, nil, "🇲🇲🇲🇲gg V18🇲🇲🇲🇲")
 if CHACKKK1 == nil then
 else
 if CHACKKK1 == 1 then
@@ -427,7 +314,7 @@ end
 
 function cr2()
 
-CHACK22 = gg.multiChoice({"  Exynos Black"," Color Exynos Pink","✧ New Color Exynos Red ","✧ Color Exynos Red HDR","✧ Color Exynos White","✧ New Color Exynos Yellow","✧ Color Exynos 7870 Red","✧ New Color Exynos 7870 Yellow","✧ Color Exynos 8890 Red","⎋BACK"}, nil, "")
+CHACK22 = gg.multiChoice({"  Exynos Black"," Color Exynos Pink","✧ New Color Exynos Red ","✧ Color Exynos Red HDR","✧ Color Exynos White","✧ New Color Exynos Yellow","✧ Color Exynos 7870 Red","✧ New Color Exynos 7870 Yellow","✧ Color Exynos 8890 Red","⎋BACK"}, nil, "🇮🇩 Script Gilang Faisal V12.1 🇮🇩\n🇮🇩 Youtube Channel: Gilang Faisal 🇮🇩\n🇮🇩 Instagram: @Gilangfaisal53 🇮🇩")
 if CHACK22 == nil then
 else
 if CHACK22[1] == true then
@@ -1050,7 +937,7 @@ end
 
 function cr7()
 
-CLRSNAP4001 = gg.multiChoice({"✧ Color 400 Green","✧ Color 400 Yellow","⎋BACK"}, nil, "LTNS")
+CLRSNAP4001 = gg.multiChoice({"✧ Color 400 Green","✧ Color 400 Yellow","⎋BACK"}, nil, "gg")
 if CLRSNAP4001 == nil then
 else
 if CLRSNAP4001[1] == true then
@@ -1096,7 +983,7 @@ end
 
 function cr8()
 
-CLRSNAP4101 = gg.multiChoice({"✧ Color 410 Blue","✧ Color 410 Green","✧ Color 410 Red","✧ Color 410 Yellow","⎋BACK"}, nil, "")
+CLRSNAP4101 = gg.multiChoice({"✧ Color 410 Blue","✧ Color 410 Green","✧ Color 410 Red","✧ Color 410 Yellow","⎋BACK"}, nil, "ENGLISH: If this color is inactive, use color for All Devices\nINDONESIAN: Jika warna ini tidak aktif, gunakan warna untuk Semua Perangkat")
 if CLRSNAP4101 == nil then
 else
 if CLRSNAP4101[1] == true then
@@ -1553,6 +1440,19 @@ end
 PUBGMH = -1
 end
 
+function crl6151()
+
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("R_R({5,159,46,192,78,222,123,7,151,45,189,79,229,110,5,148,47,185,81,221,110,255,150,45,181,79,222,112,252,150,42,179,70,215})", 4, false, 536870912, 0, -1)
+gg.processResume()
+gg.refineNumber("R_R({5,159,46,192,76,230})", 4, false, 536870912, 0, -1)
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("R_R({5,159,46,192,77,230})", 4)
+gg.clearResults()
+gg.toast("☬ COLOR 615 Blue ☬")
+end
+
 function crl6152()
 
 gg.setRanges(131072)
@@ -1568,6 +1468,32 @@ gg.getResults(10)
 gg.editAll("196619", 4)
 gg.clearResults()
 gg.toast("☬ COLOR 615 Cyan ☬")
+end
+
+function crl6153()
+
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("R_R({5,159,46,192,78,222,123,7,151,45,189,79,229,110,5,148,47,185,81,221,110,255,150,45,181,79,222,112,252,150,42,179,70,215})", 4, false, 536870912, 0, -1)
+gg.processResume()
+gg.refineNumber("R_R({5,159,46,192,76,230})", 4, false, 536870912, 0, -1)
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("R_R({5,159,46,192,77,231})", 4)
+gg.clearResults()
+gg.toast("☬ COLOR 615 Green ☬")
+end
+
+function crl6154()
+
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("R_R({5,159,46,192,78,222,123,7,151,45,189,79,229,110,5,148,47,185,81,221,110,255,150,45,181,79,222,112,252,150,42,179,70,215})", 4, false, 536870912, 0, -1)
+gg.processResume()
+gg.refineNumber("R_R({5,159,46,192,76,230})", 4, false, 536870912, 0, -1)
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("R_R({5,159,46,192,78,222})", 4)
+gg.clearResults()
+gg.toast("☬ COLOR 615 Red ☬")
 end
 
 function crl6155()
@@ -2407,7 +2333,7 @@ end
 
 function CHIP()
 
-WALL22 = gg.multiChoice({"✧ New Wallhack All Device","✧ Wallhack Fix Blink","✧ Wallhack Fix Scope","✧ Wallhack Exynos 7420","✧ Wallhack Exynos 7570","✧ New Wallhack Exynos 7870","✧ Wallhack Exynos 7880","✧ Wallhack Exynos 7885","✧ Wallhack Exynos 8890","✧ Wallhack Exynos 8895","✧ Wallhack Exynos 9610","✧ Wallhack Exynos 9810","✧ Wallhack Huawei","✧ Wallhack Kirin 650","✧ Wallhack Kirin 655","✧ Wallhack Kirin 658","✧ Wallhack Kirin 659","✧ Wallhack Kirin 710","✧ Wallhack Kirin 955","✧ Wallhack Kirin 970","✧ Wallhack Kirin 980","✧ New Wallhack Mediatek 6750","✧ Wallhack Mediatek 6765","✧ Wallhack Mediatek G90T","✧ New Wallhack Mediatek P10","✧ Wallhack Mediatek P22","✧ Wallhack Mediatek P23","✧ Wallhack Mediatek P35","✧ Wallhack Mediatek P60","✧ Wallhack Mediatek P65","✧ Wallhack Mediatek P70","✧ Wallhack Mediatek X20","✧ Wallhack Mediatek X25","✧ Wallhack Note 3","✧ Wallhack Oppo","✧ Wallhack Vivo","⎋BACK"}, nil, "🇲🇲🇲🇲LTNS V31")
+WALL22 = gg.multiChoice({"✧ New Wallhack All Device","✧ Wallhack Fix Blink","✧ Wallhack Fix Scope","✧ Wallhack Exynos 7420","✧ Wallhack Exynos 7570","✧ New Wallhack Exynos 7870","✧ Wallhack Exynos 7880","✧ Wallhack Exynos 7885","✧ Wallhack Exynos 8890","✧ Wallhack Exynos 8895","✧ Wallhack Exynos 9610","✧ Wallhack Exynos 9810","✧ Wallhack Huawei","✧ Wallhack Kirin 650","✧ Wallhack Kirin 655","✧ Wallhack Kirin 658","✧ Wallhack Kirin 659","✧ Wallhack Kirin 710","✧ Wallhack Kirin 955","✧ Wallhack Kirin 970","✧ Wallhack Kirin 980","✧ New Wallhack Mediatek 6750","✧ Wallhack Mediatek 6765","✧ Wallhack Mediatek G90T","✧ New Wallhack Mediatek P10","✧ Wallhack Mediatek P22","✧ Wallhack Mediatek P23","✧ Wallhack Mediatek P35","✧ Wallhack Mediatek P60","✧ Wallhack Mediatek P65","✧ Wallhack Mediatek P70","✧ Wallhack Mediatek X20","✧ Wallhack Mediatek X25","✧ Wallhack Note 3","✧ Wallhack Oppo","✧ Wallhack Vivo","⎋BACK"}, nil, "🇲🇲🇲🇲gg V8")
 if WALL22 == nil then
 else
 if WALL22[1] == true then
@@ -3177,7 +3103,7 @@ gg.setVisible(false)
 gg.sleep(150)
 for i = 1, 3 do
 for i = 1, 15 do
-gg.toast("LTNS")
+gg.toast("gg")
 gg.sleep(70)
 end
 end
@@ -3370,7 +3296,7 @@ end
 
 function WH()
 
-MN1 = gg.multiChoice({"{📌1}🔭🔭WH SD 400","{📌2}🔭🔭WH SD 410","{📌3}🔭🔭WH SD 415","{📌4}🔭🔭WH SD 425","{📌5}🔭🔭WH SD 430","{📌6}🔭🔭WH SD 435","{📌7}🔭🔭WH SD 439","{📌8}🔭🔭WH SD 450","{📌9}🔭🔭WH SD 600","{📌10}🔭🔭WH SD 610","{📌11}🔭🔭WH SD 615","{📌12}🔭🔭WH SD 616","{📌13}🔭🔭WH SD 625","{📌14}🔭🔭WH SD 626","{📌15}🔭🔭WH SD 630","{📌16}🔭🔭WH SD 632","{📌17}🔭🔭WH SD 636","{📌18}🔭🔭WH SD 650","{📌19}🔭🔭WH SD 652","{📌20}🔭🔭WH SD 653","{📌21}🔭🔭WH SD 660","{📌22}🔭🔭WH SD 665","{📌23}🔭🔭WH SD 670","{📌24}🔭🔭WH SD 675","{📌25}🔭🔭WH SD 710","{📌26}🔭🔭WH SD 712","{📌27}🔭🔭WH SD 800","{📌28}🔭🔭WH SD 801","{📌29}🔭🔭WH SD 805","{📌30}🔭🔭WH SD 808","{📌31}🔭🔭WH SD 810","{📌32}🔭🔭WH SD 815","{📌33}🔭🔭WH SD 820","{📌34}🔭🔭WH SD 821","{📌35}🔭🔭WH SD 835","{📌36}🔭🔭WH SD 845","{📌37}🔭🔭WH SD 855","{📌38}🔭🔭WH SD 865","[Back]"}, nil, "🇲🇲🇲🇲LTNS Online Script V31 VIP🇲🇲🇲🇲")
+MN1 = gg.multiChoice({"{📌1}🔭🔭WH SD 400","{📌2}🔭🔭WH SD 410","{📌3}🔭🔭WH SD 415","{📌4}🔭🔭WH SD 425","{📌5}🔭🔭WH SD 430","{📌6}🔭🔭WH SD 435","{📌7}🔭🔭WH SD 439","{📌8}🔭🔭WH SD 450","{📌9}🔭🔭WH SD 600","{📌10}🔭🔭WH SD 610","{📌11}🔭🔭WH SD 615","{📌12}🔭🔭WH SD 616","{📌13}🔭🔭WH SD 625","{📌14}🔭🔭WH SD 626","{📌15}🔭🔭WH SD 630","{📌16}🔭🔭WH SD 632","{📌17}🔭🔭WH SD 636","{📌18}🔭🔭WH SD 650","{📌19}🔭🔭WH SD 652","{📌20}🔭🔭WH SD 653","{📌21}🔭🔭WH SD 660","{📌22}🔭🔭WH SD 665","{📌23}🔭🔭WH SD 670","{📌24}🔭🔭WH SD 675","{📌25}🔭🔭WH SD 710","{📌26}🔭🔭WH SD 712","{📌27}🔭🔭WH SD 800","{📌28}🔭🔭WH SD 801","{📌29}🔭🔭WH SD 805","{📌30}🔭🔭WH SD 808","{📌31}🔭🔭WH SD 810","{📌32}🔭🔭WH SD 815","{📌33}🔭🔭WH SD 820","{📌34}🔭🔭WH SD 821","{📌35}🔭🔭WH SD 835","{📌36}🔭🔭WH SD 845","{📌37}🔭🔭WH SD 855","[Back]"}, nil, "🇲🇲🇲🇲gg V18 VIP🇲🇲🇲🇲")
 if MN1 == nil then
 else
 if MN1[1] == true then
@@ -3486,9 +3412,6 @@ WH855()
 Y855()
 end
 if MN1[38] == true then
-WH855()
-end
-if MN1[39] == true then
 HOME()
 end
 end
@@ -3546,6 +3469,53 @@ gg.getResults(100)
 gg.editAll("120", 16)
 gg.clearResults()
 gg.toast("☬ Wallhack 400 ☬")
+end
+
+function WH410()
+
+gg.clearResults()
+gg.setRanges(AlumKhKvRNpyfObXIcPZZdRlIlfCOmlJvuzlnEuROcTUfoLIHFMZjFZItLPfa.IYLrnNXpUzZEDMDykIDRIyjTvpTSfIjl)
+gg.searchNumber("3.1949605e-43;3.1809475e-43;2.0;3.2089735e-43", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("150", 16)
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("8204;8205;1,194,344,451", 4, false, 536870912, 0, -1)
+gg.searchNumber("8204", 4, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("15", 4)
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("1,669,693,440;8205", 4, false, 536870912, 0, -1)
+gg.searchNumber("8205", 4, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("8204", 4)
+gg.clearResults()
+gg.toast("☬ Wallhack 410 ☬")
+end
+
+function WH415()
+
+gg.clearResults()
+gg.setRanges(AlumKhKvRNpyfObXIcPZZdRlIlfCOmlJvuzlnEuROcTUfoLIHFMZjFZItLPfa.IYLrnNXpUzZEDMDykIDRIyjTvpTSfIjl)
+gg.searchNumber("228;1,073,741,824;1,073,741,824;229;-1,082,130,432:29", 4, false, 536870912, 0, -1)
+gg.searchNumber("1,073,741,824", 4, false, 536870912, 0, -1)
+gg.getResults(30)
+gg.editAll("1,123,024,896", 4)
+gg.clearResults()
+gg.setRanges(AlumKhKvRNpyfObXIcPZZdRlIlfCOmlJvuzlnEuROcTUfoLIHFMZjFZItLPfa.IYLrnNXpUzZEDMDykIDRIyjTvpTSfIjl)
+gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.searchNumber("3.1809475e-43;3.1949605e-43;2.0;3.2089735e-43:53", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.toast("☬ Wallhack 415 ☬")
 end
 
 function WH425()
@@ -4278,8 +4248,7 @@ gg.searchNumber("1,850,305,641", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("0", gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("Less Recoil️")
-gg.clearResults()
+gg.toast("Less Recoil")
 end
 
 function AUTOHS()
@@ -4325,9 +4294,56 @@ function close()
 gg.setVisible(true)
 print('')
 gg.setVisible(true)
-gg.alert("LTNS KILLER \n\n ☎️☎️09-951155095")
+gg.alert("gg KILLER \n\n ☎️☎️09-951155095")
 os.exit()
 end
+function Bypass()
+edit({
+{gg.REGION_C_ALLOC}, --Memory Range
+{"AntiSeal"}, --Name
+{16384, 4},
+{16384, 4, 4},
+{16384, 8, 4},
+{16384, 12, 4},
+{16384, 16, 4},
+{16384, 20, 4},
+{16384, 508, 4},
+},
+{
+{0, -4, 4, true},
+{0, -48, 4, true},
+{0, -80, 4, true},
+{0, -100, 4, true},
+{0, 4, 4, true},
+{0, 48, 4, true},
+{0, 80, 4, true},
+{0, 100, 4, true},
+})
+gg.clearResults()
+gg.alert ( " Successful Boy ")
+gg.alert (" We are gg ")
+gg.toast("Successful boy")
+end
+function ONOFF()
+gg.clearResults()
+  gg.setVisible(false)
+  gg.alert(" Data On/Off ")
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("1.1754945e-37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("9CC",-1,gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1)
+   gg.editAll("0", gg.TYPE_FLOAT)
+   gg.toast(" Freezed Value #✓π$[=] ")
+  gg.sleep(5000)
+  gg.setVisible(false)
+  gg.editAll("1.1754945e-37", gg.TYPE_FLOAT)
+  gg.alert(" Done")
+  gg.clearResults()
+gg.alert (" Successful On/Off ")
+end
+
+print("HMHVIP(🇲🇲🇲🇲 gg 🇲🇲)")
+cs = "YOUR DEVICE ALWAYS ROOT"
 while true do
 if gg.isVisible(true) then
 PUBGMH = 1
@@ -4339,7 +4355,3 @@ HOME()
 end
 end
 
-else
-gg.alert(" Fuck Copy Paster \n I know that you are a theif😂😂")
-os.exit()
-end
