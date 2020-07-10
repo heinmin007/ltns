@@ -72,11 +72,201 @@ end
 PUBGMH = -1
 end
 function MEGL()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("288232579469934592", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10000)
-gg.editAll("0", gg.TYPE_QWORD)
+os.remove("/.iacovnfld.")
+os.remove("/storage/emulated/0/Android/.system_android_l2")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.fff")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.system_android_l2")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.fff")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.system_android_l2")
 gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber('"67109633"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('"67109633"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+
+revert = gg.getResults(11084001, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(11084001, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = '"0"'
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+  gg.clearResults()
+gg.sleep(6000)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109633", gg.TYPE_DWORD)
+gg.getResults(50000)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.sleep(6000)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377;12547::100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0;0~20;131586::9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("131586", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377;12547::100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0;0~20;131586::9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("131586", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377;12547::100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0;0~20;131586::9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("131586", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377;12547::100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0;0~20;131586::9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("131586", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377", gg.TYPE_DWORD)
+gg.getResults(50000)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+os.remove("/.iacovnfld.")
+os.remove("/storage/emulated/0/Android/.system_android_l2")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.fff")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.system_android_l2")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.fff")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.system_android_l2")
+gg.alert("Successful")
 gg.alert("Successful2😄")
 end
 function MEKR()
@@ -85,7 +275,7 @@ gg.searchNumber("288232579469934592", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1
 gg.getResults(10000)
 gg.editAll("0", gg.TYPE_QWORD)
 gg.clearResults()
-gg.alert("Successful2😃")
+gg.alert("Successful3😃")
 end
 function CLR()
 CHACKKK1 = gg.choice({"🇲🇲New Color All Device🇲🇲","🇲🇲 New Color Exynos🇲🇲","🇲🇲 Color HDR🇲🇲","🇲🇲Color Kirin🇲🇲","🇲🇲Color Mediatek🇲🇲","🇲🇲Color Vehicle🇲🇲","🇲🇲Color 400🇲🇲","🇲🇲Color 410🇲🇲","🇲🇲Color 415🇲🇲","🇲🇲Color 425🇲🇲","🇲🇲Color 430🇲🇲","🇲🇲 Color 435🇲🇲","🇲🇲Color 450🇲🇲","🇲🇲Color 610🇲🇲","🇲🇲Color 615🇲🇲","🇲🇲Color 625🇲🇲","🇲🇲Color 636🇲🇲","🇲🇲Color 650🇲🇲","🇲🇲Color 653🇲🇲","🇲🇲Color 660🇲🇲"," 🇲🇲Color 665🇲🇲","🇲🇲Color 675🇲🇲","🇲🇲Color 710🇲🇲","🇲🇲Color 712🇲🇲","🇲🇲Color 835🇲🇲","🇲🇲 Color 845🇲🇲","🇲🇲Color 855🇲🇲","BACK"}, nil, "🇲🇲🇲🇲gg V18🇲🇲🇲🇲")
