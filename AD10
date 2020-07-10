@@ -267,7 +267,7 @@ os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.system_android
 os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.fff")
 os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.system_android_l2")
 gg.alert("Successful")
-gg.alert("Successful2😄")
+gg.alert("Successful3😄")
 end
 function MEKR()
 gg.setRanges(gg.REGION_C_ALLOC)
