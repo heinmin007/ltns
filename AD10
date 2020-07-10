@@ -56,16 +56,13 @@ end
 PUBGMH = -1
 end
 function ME1()
-ME1 = gg.choice({" 🇨🇰🇨🇰Antiban GL\n ","🇰🇷🇰🇷Antiban KR ","Back"}, nil," 🇲🇲🇲🇲 NATSOE 🇲🇲🇲🇲")
+ME1 = gg.choice({" 🇨🇰🇨🇰Antiban All\n ","Back"}, nil," 🇲🇲🇲🇲 NATSOE 🇲🇲🇲🇲")
 if ME1 == nil then
 else
 if ME1 == 1 then
  MEGL()
 end
-if ME1 ==2 then
- MEKR()
-end
-if ME1 == 3 then
+if ME1 == 2 then
 HOME()
 end
 end
@@ -268,14 +265,6 @@ os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.fff")
 os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.system_android_l2")
 gg.alert("Successful")
 gg.alert("Successful3😄")
-end
-function MEKR()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("288232579469934592", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10000)
-gg.editAll("0", gg.TYPE_QWORD)
-gg.clearResults()
-gg.alert("Successful3😃")
 end
 function CLR()
 CHACKKK1 = gg.choice({"🇲🇲New Color All Device🇲🇲","🇲🇲 New Color Exynos🇲🇲","🇲🇲 Color HDR🇲🇲","🇲🇲Color Kirin🇲🇲","🇲🇲Color Mediatek🇲🇲","🇲🇲Color Vehicle🇲🇲","🇲🇲Color 400🇲🇲","🇲🇲Color 410🇲🇲","🇲🇲Color 415🇲🇲","🇲🇲Color 425🇲🇲","🇲🇲Color 430🇲🇲","🇲🇲 Color 435🇲🇲","🇲🇲Color 450🇲🇲","🇲🇲Color 610🇲🇲","🇲🇲Color 615🇲🇲","🇲🇲Color 625🇲🇲","🇲🇲Color 636🇲🇲","🇲🇲Color 650🇲🇲","🇲🇲Color 653🇲🇲","🇲🇲Color 660🇲🇲"," 🇲🇲Color 665🇲🇲","🇲🇲Color 675🇲🇲","🇲🇲Color 710🇲🇲","🇲🇲Color 712🇲🇲","🇲🇲Color 835🇲🇲","🇲🇲 Color 845🇲🇲","🇲🇲Color 855🇲🇲","BACK"}, nil, "🇲🇲🇲🇲gg V18🇲🇲🇲🇲")
