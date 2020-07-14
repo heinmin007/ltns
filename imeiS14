@@ -4247,14 +4247,12 @@ ltns.toast(" Fast Aimlock Enabled")
 end
 
 function REC()
+ltns.setRanges(ltns.REGION_ANONYMOUS)
+ltns.searchNumber("1,850,305,641", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+ltns.getResults(20)
+ltns.editAll("0", ltns.TYPE_DWORD)
 ltns.clearResults()
-ltns.setRanges(ltns.REGION_C_DATA)
-ltns.searchNumber("-2.2673448e24;-1.36203639e28", 16, false, 536870912, 0, -1)
-ltns.searchNumber("-1.36203639e28", 16, false, 536870912, 0, -1)
-ltns.getResults(99)
-ltns.editAll("0", 16)
-ltns.toast("Less Recoil️")
-ltns.clearResults()
+ltns.toast("Less Recoil")
 end
 
 function AUTOHS()
