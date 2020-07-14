@@ -92,11 +92,45 @@ end
   PUBGMH = -1
 end
 function a()
-ltns.setRanges(ltns.REGION_C_ALLOC)
-ltns.searchNumber("288232579469934592", ltns.TYPE_QWORD, false, ltns.SIGN_EQUAL, 0, -1)
-ltns.getResults(10000)
-ltns.editAll("0", ltns.TYPE_QWORD)
 ltns.clearResults()
+ltns.setRanges(ltns.REGION_C_ALLOC)
+ltns.searchNumber("67109377;67109633", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == ltns.TYPE_DWORD then
+		v.value = "0"
+		v.freeze = true
+	end
+end
+ltns.addListItems(t)
+t = nil
+ ltns.clearResults()
+ltns.setRanges(ltns.REGION_CODE_APP)
+ltns.searchNumber("2136~2139", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == ltns.TYPE_DWORD then
+		v.value = "0"
+		v.freeze = true
+	end
+end
+ltns.addListItems(t)
+t = nil
+ ltns.clearResults()
+ltns.setRanges(ltns.REGION_CODE_APP)
+ltns.searchNumber("65538", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == ltns.TYPE_DWORD then
+		v.value = "0"
+		v.freeze = true
+	end
+end
+ltns.addListItems(t)
+t = nil
 ltns.alert("Successful")
 end
 function me1()
