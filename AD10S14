@@ -64,7 +64,7 @@ end
 
 function Bypass()
   SN = ltns.multiChoice({
-"BYPASS {KR} Lobby",
+"BYPASS {Gl&KR} Lobby",
 "𝙴𝚇𝙸𝚃"},
 nil,"🇲🇲LTNS Online Script Ever🇲🇲")
   if SN == nil then
@@ -80,145 +80,12 @@ end
   PUBGMH = -1
 end
 function a()
-ltns.clearResults()
 ltns.setRanges(ltns.REGION_C_ALLOC)
-ltns.searchNumber("67109377;67109633", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == ltns.TYPE_DWORD then
-		v.value = "0"
-		v.freeze = true
-	end
-end
-ltns.addListItems(t)
-t = nil
- ltns.clearResults()
-ltns.setRanges(ltns.REGION_CODE_APP)
-ltns.searchNumber("2136~2139", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == ltns.TYPE_DWORD then
-		v.value = "0"
-		v.freeze = true
-	end
-end
-ltns.addListItems(t)
-t = nil
- ltns.clearResults()
-ltns.setRanges(ltns.REGION_CODE_APP)
-ltns.searchNumber("65538", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == ltns.TYPE_DWORD then
-		v.value = "0"
-		v.freeze = true
-	end
-end
-ltns.addListItems(t)
-t = nil
-end
-function me1()
+ltns.searchNumber("288232579469934592", ltns.TYPE_QWORD, false, ltns.SIGN_EQUAL, 0, -1)
+ltns.getResults(10000)
+ltns.editAll("0", ltns.TYPE_QWORD)
 ltns.clearResults()
-ltns.setRanges(ltns.REGION_C_ALLOC)
-ltns.setVisible(false)
-ltns.searchNumber("67109633", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-ltns.setVisible(false)
-ltns.getResultsCount()
-ltns.setVisible(false)
-ltns.searchNumber("67109633", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-ltns.setVisible(false)
-ltns.getResults(30101996)
-ltns.addListItems({
-  [1] = {
-    address = 2970277376,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [2] = {
-    address = 2970486976,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [3] = {
-    address = 2970991948,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [4] = {
-    address = 3041580544,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [5] = {
-    address = 3041790144,
-    flags = 4,
-    freeze = true,
-    value = 0
-  },
-  [6] = {
-    address = 3042295116,
-    flags = 4,
-    freeze = true,
-    value = 0
-  }
-})
-ltns.editAll("0", 4)
-ltns.clearResults()
-ltns.clearResults()
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache")
-os.remove("/storage/emulated/0/tencent")
-os.remove("/storage/emulated/0/MidasOverse")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/tbslog")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/cache")
-os.remove("/storage/emulated/0/tencent")
-os.remove("/storage/emulated/0/MidasOverse")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/vmpcloudconfig.json")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/cache")
-os.remove("/storage/emulated/0/tencent")
-os.remove("/storage/emulated/0/MidasOverse")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/tbslog")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/login-identifier.txt")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/vmpcloudconfig.json")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
-ltns.clearResults()
-ltns.setRanges(ltns.REGION_C_ALLOC)
-ltns.searchNumber("\"67109377\"", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-ltns.refineNumber("\"67109377\"", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-revert = ltns.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, i in ipairs((ltns.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil))) do
-  if i.flags == ltns.TYPE_DWORD then
-    i.value = "\"0\""
-    i.freeze = true
-  end
-end
-ltns.addListItems((ltns.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)))
-ltns.clearResults()
-ltns.alert("🔒 Bypass Has Been Activated 🔒")
+ltns.alert("Successful")
 end
 function CLR()
 CHACKKK1 = ltns.choice({"🇲🇲New Color All Device🇲🇲","🇲🇲 New Color Exynos🇲🇲","🇲🇲 Color HDR🇲🇲","🇲🇲Color Kirin🇲🇲","🇲🇲Color Mediatek🇲🇲","🇲🇲Color Vehicle🇲🇲","🇲🇲Color 400🇲🇲","🇲🇲Color 410🇲🇲","🇲🇲Color 415🇲🇲","🇲🇲Color 425🇲🇲","🇲🇲Color 430🇲🇲","🇲🇲 Color 435🇲🇲","🇲🇲Color 450🇲🇲","🇲🇲Color 610🇲🇲","🇲🇲Color 615🇲🇲","🇲🇲Color 625🇲🇲","🇲🇲Color 636🇲🇲","🇲🇲Color 650🇲🇲","🇲🇲Color 653🇲🇲","🇲🇲Color 660🇲🇲"," 🇲🇲Color 665🇲🇲","🇲🇲Color 675🇲🇲","🇲🇲Color 710🇲🇲","🇲🇲Color 712🇲🇲","🇲🇲Color 835🇲🇲","🇲🇲 Color 845🇲🇲","🇲🇲Color 855🇲🇲","BACK"}, nil, "🇲🇲🇲🇲LTNS Online Script Ever🇲🇲🇲🇲")
