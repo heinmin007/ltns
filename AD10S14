@@ -22495,6 +22495,7 @@ ltns.getResults(100)
 ltns.editAll("0.07", 16)
 ltns.clearResults()
 ltns.toast(" HS 50% ")
+os.remove("/storage/emulated/0/Android/data/hmhltnsvip")
 end
 function AT()
 
