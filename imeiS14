@@ -101,46 +101,100 @@ end
   PUBGMH = -1
 end
 function a()
-ltns.clearResults()
-ltns.setRanges(ltns.REGION_C_ALLOC)
-ltns.searchNumber("67109377;67109633", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == ltns.TYPE_DWORD then
-		v.value = "0"
-		v.freeze = true
-	end
-end
-ltns.addListItems(t)
-t = nil
- ltns.clearResults()
-ltns.setRanges(ltns.REGION_CODE_APP)
-ltns.searchNumber("2136~2139", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == ltns.TYPE_DWORD then
-		v.value = "0"
-		v.freeze = true
-	end
-end
-ltns.addListItems(t)
-t = nil
- ltns.clearResults()
-ltns.setRanges(ltns.REGION_CODE_APP)
-ltns.searchNumber("65538", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
-revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == ltns.TYPE_DWORD then
-		v.value = "0"
-		v.freeze = true
-	end
-end
-ltns.addListItems(t)
-t = nil
-ltns.alert("Successful")
+
+    ltns.clearResults()
+  ltns.setRanges(4)
+  ltns.searchNumber("67109633", 4)
+  if ltns.getResultCount() == 0 then
+    ltns.alert("Failed Restart Game And Try")
+    ltns.setVisible(true)
+    ltns.processKill()
+    os.exit()
+  else
+    ltns.getResults(50000)
+    ltns.editAll("0", 4)
+    ltns.clearResults()
+    ltns.setRanges(ltns.REGION_C_ALLOC)
+    ltns.searchNumber("67109633", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+    ltns.refineNumber("67109633", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+    revert = ltns.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)
+    for i, v in ipairs((ltns.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil))) do
+      if v.flags == ltns.TYPE_DWORD then
+        v.value = "0"
+        v.freeze = true
+      end
+    end
+    ltns.addListItems((ltns.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)))
+    ltns.clearResults()
+    ltns.clearList()
+    ltns.clearResults()
+    ltns.setRanges(ltns.REGION_C_ALLOC)
+    ltns.searchNumber("67109377", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+    ltns.refineNumber("67109377", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+    revert = ltns.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)
+    for i, v in ipairs((ltns.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil))) do
+      if v.flags == ltns.TYPE_DWORD then
+        v.value = "0"
+        v.freeze = true
+      end
+    end
+    ltns.addListItems((ltns.getResults(16122000, nil, nil, nil, nil, nil, nil, nil, nil)))
+    ltns.clearResults()
+    ltns.clearList()
+    ltns.clearResults()
+    ltns.setRanges(4)
+      ltns.setRanges(ltns.REGION_C_ALLOC)
+      ltns.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", ltns.TYPE_FLOAT, false, ltns.SIGN_EQUAL, 0, -1)
+      if ltns.getResultCount() == 0 then
+      else
+        ltns.searchNumber("2.2958874e-41", ltns.TYPE_FLOAT, false, ltns.SIGN_EQUAL, 0, -1)
+        n = ltns.getResultCount()
+        jz = ltns.getResults(n)
+        for i = 1, n do
+          ltns.addListItems({[1] = {address = jz[i].address - 252,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address - 236,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address - 232,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address - 72,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address - 68,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address - 64,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address + 30,flags = 4,freeze = true,value = 119}})
+          ltns.addListItems({[1] = {address = jz[i].address + 130,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address + 180,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address + 200,flags = 4,freeze = true,value = 4451}})
+          ltns.addListItems({[1] = {address = jz[i].address + 300,flags = 4,freeze = true,value = 0}})
+          ltns.addListItems({[1] = {address = jz[i].address + 310,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address + 360,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address + 450,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address + 650,flags = 4,freeze = true,value = 70086}})
+          ltns.addListItems({[1] = {address = jz[i].address + 800,flags = 4,freeze = true,value = 70086}})
+        end
+      end
+      ltns.addListItems((ltns.getResults(140701)))
+      ltns.clearResults()
+      ltns.setRanges(ltns.REGION_C_ALLOC)
+      ltns.searchNumber("1801989935;1768710958;1920233061;1919905893::14", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+      ltns.refineNumber("1801989935;1768710958;1920233061;1919905893", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+      ltns.refineNumber("1801989935;1768710958;1920233061;1919905893", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+      for i, v in ipairs((ltns.getResults(140701))) do
+        ltns.getResults(140701)[i].flags = ltns.TYPE_QWORD
+        ltns.getResults(140701)[i].value = "0"
+        ltns.getResults(140701)[i].freeze = true
+     end
+     ltns.addListItems((ltns.getResults(140701)))
+     ltns.clearResults()
+     ltns.setRanges(ltns.REGION_ANONYMOUS)
+     ltns.searchNumber("1130852172;1852139884::14", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+     ltns.refineNumber("1130852172;1852139884", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+     ltns.refineNumber("1130852172;1852139884", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+     for i, v in ipairs((ltns.getResults(140701))) do
+       ltns.getResults(140701)[i].flags = ltns.TYPE_QWORD
+       ltns.getResults(140701)[i].value = "0"
+       ltns.getResults(140701)[i].freeze = true
+     end
+     ltns.addListItems((ltns.getResults(140701)))
+     ltns.clearResults()
+     ltns.alert("Fix 10min ban ")
+   end
 end
 function me1()
 ltns.clearResults()
