@@ -87,7 +87,7 @@ nil,"🇲🇲LTNS Online Script Ever🇲🇲")
   if SN == nil then
   else
   if SN[1] == true then
-    b()
+    c()
   end
  if SN[2] == true then
     Exit()
@@ -95,6 +95,211 @@ nil,"🇲🇲LTNS Online Script Ever🇲🇲")
 
 end
   PUBGMH = -1
+end
+function c()
+ltns.setRanges(4)
+  ltns.searchNumber("67109377;12547::100", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  ltns.searchNumber("12547", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  jg = ltns.getResults(100)
+  sl = ltns.getResultCount()
+  if 100 < sl then
+    sl = 100
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_DWORD,
+            freeze = true,
+            value = 0
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("25％")
+ ltns.clearResults()
+  ltns.clearResults()
+  ltns.setRanges(4)
+  ltns.searchNumber("0;0~20;131586::9", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  ltns.searchNumber("131586", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  jg = ltns.getResults(100)
+  sl = ltns.getResultCount()
+  if 100 < sl then
+    sl = 100
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_DWORD,
+            freeze = true,
+            value = 0
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("50％")
+  ltns.clearResults()
+  ltns.setRanges(4)
+  ltns.searchNumber("67109377;12547::100", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  ltns.searchNumber("12547", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  jg = ltns.getResults(100)
+  sl = ltns.getResultCount()
+  if 100 < sl then
+    sl = 100
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_DWORD,
+            freeze = true,
+            value = 0
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("75％")
+  ltns.clearResults()
+  ltns.clearResults()
+  ltns.setRanges(4)
+  ltns.searchNumber("0;0~20;131586::9", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  ltns.searchNumber("131586", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  jg = ltns.getResults(100)
+  sl = ltns.getResultCount()
+  if 100 < sl then
+    sl = 100
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_DWORD,
+            freeze = true,
+            value = 0
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("100％")
+ ltns.clearResults()
+ltns.setRanges(4)
+  ltns.searchNumber("67109377;12547::100", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  ltns.searchNumber("12547", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  jg = ltns.getResults(100)
+  sl = ltns.getResultCount()
+  if 100 < sl then
+    sl = 100
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_DWORD,
+            freeze = true,
+            value = 0
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("25％")
+ ltns.clearResults()
+  ltns.clearResults()
+  ltns.setRanges(4)
+  ltns.searchNumber("0;0~20;131586::9", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  ltns.searchNumber("131586", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  jg = ltns.getResults(100)
+  sl = ltns.getResultCount()
+  if 100 < sl then
+    sl = 100
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_DWORD,
+            freeze = true,
+            value = 0
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("50％")
+  ltns.clearResults()
+  ltns.setRanges(4)
+  ltns.searchNumber("67109377;12547::100", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  ltns.searchNumber("12547", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  jg = ltns.getResults(100)
+  sl = ltns.getResultCount()
+  if 100 < sl then
+    sl = 100
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_DWORD,
+            freeze = true,
+            value = 0
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("75％")
+  ltns.clearResults()
+  ltns.setRanges(4)
+  ltns.searchNumber("0;0~20;131586::9", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  ltns.searchNumber("131586", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  jg = ltns.getResults(100)
+  sl = ltns.getResultCount()
+  if 100 < sl then
+    sl = 100
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_DWORD,
+            freeze = true,
+            value = 0
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("100％")
+ ltns.clearResults()
 end
 function a()
 
