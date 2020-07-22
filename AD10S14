@@ -70,7 +70,7 @@ nil,"🇲🇲LTNS Online Script Ever🇲🇲")
   if SN == nil then
   else
  if SN[1] == true then
-   c()
+   d()
  end
   if SN[2] == true then
     Exit()
@@ -78,6 +78,48 @@ nil,"🇲🇲LTNS Online Script Ever🇲🇲")
 
 end
   PUBGMH = -1
+end
+function d()
+ltns.clearResults()
+ltns.setRanges(ltns.REGION_C_ALLOC)
+ltns.searchNumber("67109377;67109633", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == ltns.TYPE_DWORD then
+		v.value = "0"
+		v.freeze = true
+	end
+end
+ltns.addListItems(t)
+t = nil
+ ltns.clearResults()
+ltns.setRanges(ltns.REGION_CODE_APP)
+ltns.searchNumber("2136~2139", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == ltns.TYPE_DWORD then
+		v.value = "0"
+		v.freeze = true
+	end
+end
+ltns.addListItems(t)
+t = nil
+ ltns.clearResults()
+ltns.setRanges(ltns.REGION_CODE_APP)
+ltns.searchNumber("65538", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+revert = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = ltns.getResults(20000, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == ltns.TYPE_DWORD then
+		v.value = "0"
+		v.freeze = true
+	end
+end
+ltns.addListItems(t)
+t = nil
+ltns.alert("Code Is Over 13000")
 end
 function c()
 ltns.setRanges(4)
