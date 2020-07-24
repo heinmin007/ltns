@@ -87,7 +87,7 @@ nil,"🇲🇲LTNS Online Script Ever🇲🇲")
   if SN == nil then
   else
   if SN[1] == true then
-    d()
+    a()
   end
  if SN[2] == true then
     Exit()
