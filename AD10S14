@@ -1,6 +1,6 @@
 
 
-endtime=load("return os.time{year=2020, month=7, day=24, hour=7,min=30, sec=20}")()
+endtime=load("return os.time{year=2020, month=8, day=24, hour=7,min=30, sec=20}")()
 if(os.time()>endtime) then
 ltns.alert("[⚠️] • The script has expired • [⚠️]")
 os.exit()
