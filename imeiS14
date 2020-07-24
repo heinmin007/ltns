@@ -82,6 +82,7 @@ end
 function Bypass()
   SN = ltns.multiChoice({
 "BYPASS KR [NEW] Lobby",
+"Bypass KR [CODE 13000-17000]",
 "𝙴𝚇𝙸𝚃"},
 nil,"🇲🇲LTNS Online Script Ever🇲🇲")
   if SN == nil then
@@ -90,6 +91,9 @@ nil,"🇲🇲LTNS Online Script Ever🇲🇲")
     a()
   end
  if SN[2] == true then
+   d()
+end
+ if SN[3] == true then
     Exit()
  end
 
