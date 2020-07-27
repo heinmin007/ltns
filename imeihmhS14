@@ -41,6 +41,7 @@ MN = ltns.choice({
 "{7📌} (Antenna hack📍📍📍)္",
 "{8📌} ( Wide View🔍🔍🔍) ",
 "{9📌} (AIM LOCK🔪🔪)",
+"{10📌} (💿💿G90T Wall/Colour)",
 "Ｅｘｉｔ"
 }, nil,'✭❈ LTNS KILLER ❈\n࿇ script Version 👉 Online Script Ever')
 if MN == 1 then
@@ -71,11 +72,146 @@ if MN == 9 then
 AIM()
 end
 if MN == 10 then
+G90()
+end
+if MN == 11 then
 close()
 end 
 PUBGMH = -1
 end
+function G90()
+  ML = ltns.multiChoice({
+    "Wallhack 1",
+    "Wallhack 2",
+    "Wallhack 3",
+    "Colour🌈 1",
+    "Colour🌈 2",
+    "BACK"
+  }, nil, "🇲🇲some times Wallhack not work🇲🇲")
+  if ML == nil then
+  else
+    if ML[1] == true then
+      ML1()
+    end
+    if ML[2] == true then
+      ML2()
+    end
+    if ML[3] == true then
+      ML3()
+    end
+    if ML[4] == true then
+      ML4()
+    end
+    if ML[5] == true then
+      ML5()
+    end
+    if ML[6] == true then
+      HOME()
+    end
+  end
+  PUBGMH = -1
+end
 
+function ML1()
+  ltns.clearResults()
+  ltns.setRanges(ltns.REGION_C_ALLOC)
+  ltns.searchNumber("1.793662e-43F;3.5873241e-43F;1.1210388e-44F;0.5F:512", ltns.TYPE_FLOAT, false, ltns.SIGN_EQUAL, 0, -1, 0)
+  ltns.processResume()
+  ltns.refineNumber("0.5", ltns.TYPE_FLOAT, false, ltns.SIGN_EQUAL, 0, -1, 0)
+  ltns.getResults(500, nil, nil, nil, nil, nil, nil, nil, nil)
+  ltns.getResults(500, nil, nil, nil, nil, nil, nil, nil, nil)
+  jg = ltns.getResults(500)
+  sl = ltns.getResultCount()
+  if 500 < sl then
+    sl = 500
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_FLOAT,
+            freeze = true,
+            value = 2
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("Wallhack Activated")
+end
+
+function ML2()
+  ltns.alert("wall hack on HD/Medium/classic")
+  ltns.alert("ONLY FOR MEDITEK G90K HACKS")
+  ltns.setRanges(ltns.REGION_C_ALLOC)
+  ltns.alert("Adjust Graphics Smooth /low /Classic")
+  ltns.searchNumber("0.5;-360.0;360.0;776.0;0.5;0.5:273", ltns.TYPE_FLOAT, false, ltns.SIGN_EQUAL, 0, -1, 0)
+  ltns.refineNumber("0.5", ltns.TYPE_FLOAT, false, ltns.SIGN_EQUAL, 0, -1, 0)
+  ltns.getResults(40, nil, nil, nil, nil, nil, nil, nil, nil)
+  ltns.getResults(40, nil, nil, nil, nil, nil, nil, nil, nil)
+  jg = ltns.getResults(40)
+  sl = ltns.getResultCount()
+  if sl > 100 then
+    sl = 40
+  end
+  do
+    do
+      for _FORV_3_ = 1, sl do
+        dzy = jg[_FORV_3_].address
+        ltns.addListItems({
+          [1] = {
+            address = dzy,
+            flags = ltns.TYPE_FLOAT,
+            freeze = true,
+            value = 2
+          }
+        })
+      end
+    end
+  end
+  ltns.toast("Wallhack Activated")
+end
+
+function ML3()
+  ltns.setRanges(ltns.REGION_C_ALLOC)
+  ltns.searchNumber("360.0;776.0;0.5;2.80259693e-45;5.60519386e-45;4.17586942e-43;2.94272678e-44;1.26116862e-44;9.80908925e-45;8.40779079e-45;7.00649232e-45:2293", ltns.TYPE_FLOAT, false, ltns.SIGN_EQUAL, 0, -1, 0)
+  ltns.refineNumber("0.5", ltns.TYPE_FLOAT, false, ltns.SIGN_EQUAL, 0, -1, 0)
+  revert = ltns.getResults(500, nil, nil, nil, nil, nil, nil, nil, nil)
+  local t = ltns.getResults(500, nil, nil, nil, nil, nil, nil, nil, nil)
+  do
+    do
+      for _FORV_4_, _FORV_5_ in ipairs(t) do
+        if _FORV_5_.flags == ltns.TYPE_FLOAT then
+          _FORV_5_.value = "2"
+          _FORV_5_.freeze = true
+        end
+      end
+    end
+  end
+  ltns.toast("Wallhavk Done")
+end
+
+function ML4()
+  ltns.setRanges(ltns.REGION_C_ALLOC)
+  ltns.searchNumber("\"40;734003200:5\"", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  ltns.refineNumber("\"40\"", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+  revert = ltns.getResults(600, nil, nil, nil, nil, nil, nil, nil, nil)
+  ltns.editAll("\"38\"", ltns.TYPE_DWORD)
+end
+
+function ML5()
+  ltns.setRanges(ltns.REGION_C_ALLOC)
+  ltns.searchNumber("935329792;40;734003200;32;801112064;48;801112064;16;801112064;2;2;2;64:85", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1, 0)
+  ltns.processResume()
+  ltns.refineNumber("40", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1, 0)
+  ltns.getResults(30, nil, nil, nil, nil, nil, nil, nil, nil)
+  ltns.getResults(30, nil, nil, nil, nil, nil, nil, nil, nil)
+  ltns.editAll("\"28\"", ltns.TYPE_DWORD)
+  ltns.toast("restart")
+end
 
 
 -----------------------------------------------------------------------------------------
