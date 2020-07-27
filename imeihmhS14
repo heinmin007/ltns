@@ -82,24 +82,51 @@ end
 
 function Bypass()
   SN = ltns.multiChoice({
-"BYPASS KR [NEW] Lobby",
-"Bypass KR [CODE 13000-17000]",
+"BYPASS KR & GL Lobby",
 "𝙴𝚇𝙸𝚃"},
 nil,"🇲🇲LTNS Online Script Ever🇲🇲")
   if SN == nil then
   else
   if SN[1] == true then
-    a()
+    f()
   end
  if SN[2] == true then
-   d()
-end
- if SN[3] == true then
     Exit()
  end
 
 end
   PUBGMH = -1
+end
+function f()
+ltns.setRanges(ltns.REGION_C_ALLOC)
+ltns.setVisible(false)
+ltns.searchNumber("67109633", ltns.TYPE_DWORD)
+ltns.getResults(50000)
+ltns.setVisible(false)
+ltns.editAll("0", ltns.TYPE_DWORD)
+ltns.setVisible(false)
+ltns.setVisible(false)
+ltns.clearResults()
+ltns.setRanges(ltns.REGION_C_ALLOC)
+ltns.setVisible(false)
+ltns.searchNumber("176128", ltns.TYPE_DWORD)
+ltns.getResults(50000)
+ltns.setVisible(false)
+ltns.editAll("0", ltns.TYPE_DWORD)
+ltns.setVisible(false)
+ltns.clearResults()
+ltns.setRanges(ltns.REGION_ANONYMOUS)
+ltns.searchNumber("1,130,852,172;1,852,139,884", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+ltns.getResults(10)
+ltns.editAll("0", ltns.TYPE_DWORD)
+ltns.clearResults()
+ltns.setRanges(ltns.REGION_C_ALLOC)
+ltns.searchNumber("1,801,989,935;1,919,905,893;1,768,710,958;1,920,233,061", ltns.TYPE_DWORD, false, ltns.SIGN_EQUAL, 0, -1)
+ltns.getResults(10)
+ltns.editAll("0", ltns.TYPE_DWORD)
+ltns.setVisible(false)
+ltns.clearResults()
+ltns.alert(" 𝐋𝐓𝐍𝐒 𝗕𝗬𝗣𝗔𝗦𝗦  𝗔𝗖𝗧𝗜𝗩𝗔𝗧𝗘𝗗\n")
 end
 function d()
 ltns.clearResults()
