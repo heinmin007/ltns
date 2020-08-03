@@ -1,0 +1,249 @@
+login=
+{
+  FrameLayout;
+  background="res/rx2.png";
+  {
+    LinearLayout;
+    orientation="vertical";
+    layout_width="-1";
+
+    layout_height="wrap_content";
+    layout_marginTop="550dp";
+    gravity="center";
+    {
+      Button;--按钮布局(单击按钮)
+
+      textColor="#ffffffff";--设置按钮名称颜色
+      text="▶";--按钮名称
+      id="mp3";--按钮对应id名称
+      layout_width="60dp";--按钮背景宽度
+      layout_height="60dp";--按钮背景高度
+      background="res/mp4.png";--按钮背景图
+    };
+    {
+      TextView;--文字布局
+      --设置布局高度
+      id="natsoe";
+      background="#F80000";
+      textColor="#ffffff";--字体颜色
+      text="PARADISE🏖️🏖️";--文字
+    };
+  };
+  {
+    FrameLayout;
+    layout_width="-1";
+    layout_height="-1";
+    id="l";
+  };
+  {
+    FrameLayout;
+    layout_width="-1";
+    layout_height="-1";
+    id="f";
+  };
+
+
+
+  {---登录布局
+    LinearLayout;
+    layout_width="fill";
+    layout_height="fill";
+    gravity="center_horizontal";
+    {
+      ScrollView;
+      verticalScrollBarEnabled=false;
+      layout_gravity="center";
+
+      {
+        LinearLayout;
+        layout_height="match_parent";
+        layout_width="match_parent";
+        orientation="vertical";
+        {
+          LinearLayout;
+          layout_width="wrap_content";
+          layout_height="wrap_content";
+          orientation="vertical";
+          layout_marginTop="1%h";
+          layout_gravity="center";
+          gravity="center";
+          {
+            TextView;
+            textSize="25sp";
+            textColor="#000000";
+            text="🇲🇲🇲🇲LTNS  Cheating Group🇲🇲🇲🇲";
+            layout_height="40dp";
+            gravity="center";
+            layout_width="fill";
+            layout_width="60%w";
+            ellipsize="marquee";
+            focusableInTouchMode=true;
+            focusable=true;
+            singleLine=true;
+            id="title";
+          };
+          {
+            TextView;
+            textSize="15sp";
+            textColor="#ffffff";
+            text="";
+            id="yourkey";
+            gravity="center";
+            layout_width="fill";
+          };
+          {
+            CardView;
+            radius="10dp";
+            elevation="0dp";
+            layout_height="wrap_content";
+            layout_width="wrap_content";
+            background="#FFDF00";
+            id="cardviewuser";
+            {
+              LinearLayout;
+              background="";
+              layout_width="75%w";
+              layout_height="7%h";
+              {
+                EditText;
+                background="#00000000";
+                textColor="#FE2137";
+                layout_width="70%w";
+                layout_height="fill";
+                Hint="username…";
+                id="key";
+              };
+              {
+                LinearLayout;
+                gravity="center";
+                layout_height="fill";
+                layout_width="fill";
+
+                {
+                  ImageView;
+
+                  src='res/user.png';
+
+
+                };
+              };
+            };
+          };
+          {
+            LinearLayout;
+            layout_width="10%w";
+            layout_height="0.1%h";
+            background="#3FFFFFFF";
+          };
+          {
+            LinearLayout;
+            layout_width="10dp";
+            layout_height="10dp";
+          };
+          {
+            CardView;
+            radius="10dp";
+            elevation="0dp";
+            layout_height="wrap_content";
+            layout_width="wrap_content";
+            background="#FFDF00";
+            id="cardviewpass";
+            {
+              LinearLayout;
+              background="";
+              layout_width="75%w";
+              layout_height="7%h";
+              {
+                EditText;
+                background="#00000000";
+                textColor="#FE2137";
+                layout_width="70%w";
+                layout_height="fill";
+                Hint="password…";
+                id="pass";
+              };
+              {
+                LinearLayout;
+                gravity="center";
+                layout_height="fill";
+                layout_width="fill";
+                {
+                  ImageView;
+                  layout_height="6%w";
+                  src="res/eye.png";
+                  layout_width="4%w";
+                  id="eye";
+                  ColorFilter="#000000";
+
+                };
+              };
+            };
+          };
+
+          {
+            LinearLayout;
+            gravity="center";
+            layout_height="4%h";
+            layout_width="4%h";
+          };
+          {
+            LinearLayout;
+            layout_width="wrap_content";
+            gravity="center_horizontal";
+            orientation="horizontal";
+            layout_height="wrap_content";
+            {
+              CardView;
+              radius="10dp";
+              elevation="0dp";
+              layout_height="wrap_content";
+              layout_width="wrap_content";
+              background="#FFE3F5";
+              {
+                TextView;
+                text="LOGIN";
+                textColor="#000000";
+                gravity="center";
+                layout_height="6%h";
+                id="login";
+                layout_width="25%w";
+              };
+            };
+            {
+              LinearLayout;
+              gravity="center";
+              layout_width="15%w";
+            };
+            {
+              CardView;
+              radius="10dp";
+              elevation="0dp";
+              layout_height="wrap_content";
+              layout_width="wrap_content";
+              background="#FFE3F5";
+              {
+                TextView;
+                text="GET KEY";
+                textColor="#000000";
+                gravity="center";
+                layout_height="6%h";
+                id="getkey";
+                layout_width="25%w";
+
+              };
+
+            };
+
+
+
+          };
+
+        };
+
+      };
+
+    };
+
+  };
+
+};
